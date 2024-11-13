@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    scrollbar-color: #5e685;
+    scrollbar-width: initial;
+    --scrollbar-color-forcus: #d8a034;
+    --scrollbar-color-forcus: #d8a034;
+    --scroll-color-hover: #d8a034;
+}
+
+:root {
+    --scrollbar-color-forcus: #d8a034;
+}
