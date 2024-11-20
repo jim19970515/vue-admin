@@ -37,7 +37,7 @@
                 </div>
                 <div class="flex flex-col px-[20px] items-center w-[360px] pt-14 bg-primary rounded-40 relative">
                     <h2 class="text-3xl font-bold text-white">心心美味の早午餐</h2>
-                    <img class="h-[360px] w-[360px] absolute -bottom-4" src="/src/assets/image/login_form_img.png" alt="" />
+                    <img class="h-[360px] w-[360px] absolute -bottom-4" src="@/assets/image/login_form_img.png" alt="" />
                 </div>
             </form>
         </div>
