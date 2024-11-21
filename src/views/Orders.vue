@@ -138,7 +138,7 @@
             </div>
         </div>
         <header class="flex items-center justify-between bg-white rounded-10 w-full px-4 py-2 text-white">
-            <button class="bg-primary rounded-10 px-6 py-2">xxxx</button>
+            <button class="bg-primary rounded-10 px-6 py-2 invisible">xxxx</button>
             <h1 class="bg-primary rounded-10 px-6 py-2">優惠券</h1>
             <div class="flex items-center gap-2">
                 <i :class="pagination.has_pre?'':'invisible'" @click="getOrder(pagination.current_page - 1)" class="ri-arrow-left-s-line bg-primary rounded-full text-3xl px-2 py-1"></i>
