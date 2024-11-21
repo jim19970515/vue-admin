@@ -80,7 +80,7 @@
                 <div v-for="item in coupons" :key="item.id" class="col-span-1 bg-white flex items-center gap-4 group hover:ring-8 ring-primary relative duration-300" :class="item.is_enabled != 1 ?'hover:ring-notEnabled':''">
                     <i @click="deleteCoupon(item.id)" class="ri-delete-bin-7-fill absolute -top-4 -right-4 ring-2 hover:bg-notEnabled hover:text-white ring-notEnabled bg-white text-notEnabled hidden group-hover:block rounded-full px-2 p-1 group-hover:duration-300 z-10"></i>
                     <div class="relative w-40 h-40">
-                        <img class="w-40 h-40" src="/src/assets/image/coupon_logo.png" alt="">
+                        <img class="w-40 h-40" src="@/assets/image/coupon_logo.png" alt="">
                         <p class=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center bg-opacity-70 bg-gray-600 w-full h-full text-white text-xl font-bold" :class="item.is_enabled == 1 ?'hidden':''">未啟用</p>
                     </div>
                     <div class="flex gap-2 items-center">

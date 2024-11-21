@@ -24,7 +24,7 @@
         <div class="grid grid-cols-3 gap-4">
             <div class="bg-[#90622C] col-span-2 rounded-10 px-14 flex gap-12 items-center">
                 <h1 class="text-white font-bold text-4xl">welcome to xixi admin</h1>
-                <img class="h-[184px] w-[184px] object-cover" src="/src/assets/image/admin_img.jpg" alt="">
+                <img class="h-[184px] w-[184px] object-cover" src="@/assets/image/admin_img.jpg" alt="">
             </div>
             <div class="col-span-1 flex flex-col gap-2">
                 <div class="bg-[#90622C] h-1/2 rounded-10 flex items-center justify-between px-8 text-white text-2xl text-bold">

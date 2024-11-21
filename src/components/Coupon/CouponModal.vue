@@ -62,7 +62,7 @@
                     {{modalTitle}}
                     <i class="ri-shining-2-fill absolute -top-16 -left-8 text-white text-3xl"></i>
                 </div>
-                <img class=" absolute -top-12 right-0  -translate-y-1/2 w-60" src="/src/assets/image/coupon_icon.png" alt="">
+                <img class=" absolute -top-12 right-0  -translate-y-1/2 w-60" src="@/assets/image/coupon_icon.png" alt="">
                 <div class="flex flex-col gap-2 bg-white p-4 px-8 rounded-20">
                     <div class="flex gap-2 items-center">
                         <label for="" class="text-gray-700 font-medium">優惠券名稱 :</label>

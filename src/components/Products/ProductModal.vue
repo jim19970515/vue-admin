@@ -61,7 +61,7 @@
     <div class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 backdrop-blur z-30 rounded-20">
         <div class="flex flex-col pt-6 gap-8 p-4 bg-[#D8A034] rounded-20 relative">
                 <i @click="productsModalHandler" class="ri-close-line absolute -top-3 -right-3 bg-white text-[#D80000] py-1 px-2 rounded-[20px] hover:bg-[#D80000] hover:text-white"></i>
-                <img class="absolute right-[10px] top-[-160px] w-[250px] h-[250px]" src="/src/assets/image/products_model_img.png"  alt="" />
+                <img class="absolute right-[10px] top-[-160px] w-[250px] h-[250px]" src="@/assets/image/products_model_img.png"  alt="" />
                 <h1 class="text-[#BF8616] bg-white p-2 w-fit rounded-lg font-bold">新增新商品</h1>
                 <div class="flex flex-col gap-8 bg-white px-4 pt-8 pb-4 rounded-b-[20px]">
                     <div class="flex justify-center gap-4">
