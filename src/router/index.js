@@ -10,45 +10,43 @@ import Products from '../views/Products.vue'
 import Orders from '../views/Orders.vue'
 import Coupon from '../views/Coupon.vue'
 
-const routes = [
-    {
-        path: '*',
-        redirect: '/',
-    },
-    {
-        path: '/',
-        name: 'Login',
-        component: Login,
-    },
-    {
-        path: '/admin',
-        name: 'Admin',
-        component: Admin,
-        children: [
-            {
-                path: 'dashboard',
-                name: 'Dashboard',
-                component: Dashboard,
-            },
-            {
-                path: 'products',
-                name: 'Products',
-                component: Products,
-            },
-            {
-                path: 'order',
-                name: 'Order',
-                component:Orders,
-            },
-            {
-                path: 'coupon',
-                name: 'Coupon',
-                component: Coupon,
-            },
-        ],
-    },
-]
 const router = new VueRouter({
-    routes,
+  mode: 'history',
+  routes: [{
+    path: '*',
+    redirect: '/',
+},
+{
+    path: '/',
+    name: 'Login',
+    component: Login,
+},
+{
+    path: '/admin',
+    name: 'Admin',
+    component: Admin,
+    children: [
+        {
+            path: 'dashboard',
+            name: 'Dashboard',
+            component: Dashboard,
+        },
+        {
+            path: 'products',
+            name: 'Products',
+            component: Products,
+        },
+        {
+            path: 'order',
+            name: 'Order',
+            component:Orders,
+        },
+        {
+            path: 'coupon',
+            name: 'Coupon',
+            component: Coupon,
+        },
+    ],
+},]
 })
 export default router
