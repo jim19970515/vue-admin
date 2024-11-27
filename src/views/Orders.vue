@@ -37,24 +37,6 @@
                 const {res} = await axios.put(`${vm.apiUrl}/api/${vm.apiPath}/admin/order/${vm.order.id}`,data)
                 console.log(res);
             },
-            openOrderMoadal(item){
-                const vm = this
-                const data = Object.assign({},item)
-                const date = new Date(data.create_at *1000)
-                const year = date.getFullYear()
-                const month = date.getMonth()+1
-                const day = date.getDate()
-                const hours = date.getHours()
-                const minutes = date.getMinutes()
-                const dateString = `${year}-${month}-${day} ${hours}:${minutes}`
-                data.create_at = dateString
-                vm.order = data
-                vm.orderModal = !vm.orderModal
-                // console.log(vm.order)
-                // vm.products = Object.values(item.products)
-                // console.log(vm.products)
-                console.log(vm.order)
-            },
             closeModal(){
                 const vm =this
                 vm.orderModal = !vm.orderModal
@@ -166,9 +148,6 @@
                         <th scope="col" class="px-6 py-3">
                             是否啟用
                         </th>
-                        <th scope="col" class="px-6 py-3">
-                            編輯
-                        </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -188,9 +167,6 @@
                         <td class="px-6 py-4">
                             <p v-if="item.is_paid" class="text-enabled">已付款</p>
                             <p v-else class="text-notEnabled">未付款</p>
-                        </td>
-                        <td class="px-6 py-4">
-                            <i @click="openOrderMoadal(item)" class="ri-edit-box-line text-2xl font-medium"></i>
                         </td>
                     </tr>
                 </tbody>
