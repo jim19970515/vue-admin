@@ -49,8 +49,8 @@
                             {{item.percent}}
                         </td>
                         <td class="px-4 py-4 font-normal whitespace-nowrap">
-                            <span v-if="item.is_enabled" class="bg-[#90622C] text-white p-1 rounded-5">啟用中</span>
-                            <span v-else class="bg-[#90622C] text-white p-1 rounded-5">關閉中</span>
+                            <span v-if="item.is_enabled" class="bg-enabled text-white p-1 rounded-5 group-hover:bg-white group-hover:text-enabled group-hover:font-bold">啟用中</span>
+                            <span v-else class="bg-notEnabled text-white p-1 rounded-5 group-hover:bg-white group-hover:text-notEnabled group-hover:font-bold">關閉中</span>
                         </td>
                     </tr>
                 </tbody>
