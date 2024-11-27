@@ -24,7 +24,7 @@
 </script>
 <template>
     <div class="row-span-1 bg-white rounded-10 p-4 overflow-x-auto">
-        <h3 class=" text-primary font-bold text-2xl pb-4 ">優惠券</h3>
+        <h3 class=" text-primary font-bold text-2xl pb-4 ">訂單列表</h3>
         <div class="relative overflow-x-auto shadow-md rounded-lg h-[calc(228px-16px-24px)]">
             <table class="text-sm text-center text-gray-500 w-full">
                 <thead class="text-xs text-white uppercase bg-primary sticky top-0">
