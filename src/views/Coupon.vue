@@ -64,8 +64,8 @@
 <template>
     <section class="h-[816px] bg-products w-full rounded-20 p-4 flex flex-col gap-4 animate__animated animate__fadeInRight relative">
         <div class="flex items-center justify-between bg-white rounded-10 w-full px-4 py-2 text-white">
-            <button @click="openCouponModal(true)" class="bg-primary rounded-10 px-6 py-2 hover:bg-[#90622C] duration-100">加入商品</button>
-            <h1 class="bg-primary rounded-10 px-6 py-2">產品列表</h1>
+            <button @click="openCouponModal(true)" class="bg-primary rounded-10 px-6 py-2 hover:bg-[#90622C] duration-100">加入優惠券</button>
+            <h1 class="bg-primary rounded-10 px-6 py-2">優惠券</h1>
             <div class="flex items-center gap-2">
                 <i class="ri-arrow-left-s-line bg-primary rounded-full text-3xl px-2 py-1 hover:bg-[#90622C]"></i>
                 <button class="bg-primary rounded-10 px-6 py-2">1</button>
