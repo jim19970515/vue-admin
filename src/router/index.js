@@ -1,52 +1,54 @@
-import VueRouter from 'vue-router'
-import Vue from 'vue'
+import VueRouter from "vue-router";
+import Vue from "vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-import Login from '../views/Login.vue'
-import Dashboard from '../views/Dashboard.vue'
-import Admin from '../views/Admin.vue'
-import Products from '../views/Products.vue'
-import Orders from '../views/Orders.vue'
-import Coupon from '../views/Coupon.vue'
+import Login from "../views/Login.vue";
+import Dashboard from "../views/Dashboard.vue";
+import Admin from "../views/Admin.vue";
+import Products from "../views/Products.vue";
+import Orders from "../views/Orders.vue";
+import Coupon from "../views/Coupon.vue";
 
 const router = new VueRouter({
-  mode: 'history',
-  routes: [{
-    path: '*',
-    redirect: '/',
-},
-{
-    path: '/',
-    name: 'Login',
-    component: Login,
-},
-{
-    path: '/admin',
-    name: 'Admin',
-    component: Admin,
-    children: [
+  mode: "history",
+  routes: [
+    {
+      path: "*",
+      redirect: "/"
+    },
+    {
+      path: "/",
+      name: "Login",
+      component: Login
+    },
+    {
+      path: "/admin",
+      name: "Admin",
+      component: Admin,
+      children: [
         {
-            path: 'dashboard',
-            name: 'Dashboard',
-            component: Dashboard,
+          path: "dashboard",
+          name: "Dashboard",
+          component: Dashboard
         },
         {
-            path: 'products',
-            name: 'Products',
-            component: Products,
+          path: "products",
+          name: "Products",
+          component: Products
         },
         {
-            path: 'order',
-            name: 'Order',
-            component:Orders,
+          path: "order",
+          name: "Order",
+          component: Orders
         },
         {
-            path: 'coupon',
-            name: 'Coupon',
-            component: Coupon,
-        },
-    ],
-},]
-})
-export default router
+          path: "coupon",
+          name: "Coupon",
+          component: Coupon
+        }
+      ]
+    }
+  ]
+});
+export default router;
