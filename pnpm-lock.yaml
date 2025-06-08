@@ -14,6 +14,9 @@ importers:
       axios:
         specifier: ^1.7.2
         version: 1.8.4
+      countup.js:
+        specifier: ^2.9.0
+        version: 2.9.0
       element-ui:
         specifier: ^2.15.14
         version: 2.15.14(vue@2.7.16)
@@ -26,6 +29,9 @@ importers:
       vue-axios:
         specifier: ^3.5.2
         version: 3.5.2(axios@1.8.4)(vue@2.7.16)
+      vue-countup-v2:
+        specifier: ^4.0.0
+        version: 4.0.0(countup.js@2.9.0)(vue@2.7.16)
       vue-router:
         specifier: 3.5.2
         version: 3.5.2(vue@2.7.16)
@@ -745,6 +751,9 @@ packages:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
     deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
 
+  countup.js@2.9.0:
+    resolution: {integrity: sha512-llqrvyXztRFPp6+i8jx25phHWcVWhrHO4Nlt0uAOSKHB8778zzQswa4MU3qKBvkXfJKftRYFJuVHez67lyKdHg==}
+
   cross-spawn@7.0.6:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
@@ -1454,6 +1463,13 @@ packages:
       axios: '*'
       vue: ^3.0.0 || ^2.0.0
 
+  vue-countup-v2@4.0.0:
+    resolution: {integrity: sha512-XjKeHo1ndRlJtXvHd6B1eWOpbrJDdNU3rdYZwVPv2YlUXbvthsBT4kms5Fc/mn9RdXPrMX2H/ktAAQtKjWFisw==}
+    engines: {node: '>=8', npm: '>=5'}
+    peerDependencies:
+      countup.js: latest
+      vue: latest
+
   vue-router@3.5.2:
     resolution: {integrity: sha512-807gn82hTnjCYGrnF3eNmIw/dk7/GE4B5h69BlyCK9KHASwSloD1Sjcn06zg9fVG4fYH2DrsNBZkpLtb25WtaQ==}
     peerDependencies:
@@ -2010,6 +2026,8 @@ snapshots:
   convert-source-map@2.0.0: {}
 
   core-js@2.6.12: {}
+
+  countup.js@2.9.0: {}
 
   cross-spawn@7.0.6:
     dependencies:
@@ -2682,6 +2700,11 @@ snapshots:
   vue-axios@3.5.2(axios@1.8.4)(vue@2.7.16):
     dependencies:
       axios: 1.8.4
+      vue: 2.7.16
+
+  vue-countup-v2@4.0.0(countup.js@2.9.0)(vue@2.7.16):
+    dependencies:
+      countup.js: 2.9.0
       vue: 2.7.16
 
   vue-router@3.5.2(vue@2.7.16):
